@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/Content/app/style.css' />
+    <script src="/Script/app.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.min.css">
+  </head>
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link <%= title === 'home' ? 'active' : '' %>" href="/home">
+                <i class="fa-solid fa-house"></i> Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <%= title === 'about' ? 'active' : '' %>" href="/about">
+                <i class="fa-solid fa-info-circle"></i> About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <%= title === 'projects' ? 'active' : '' %>" href="/projects">
+                <i class="fa-solid fa-folder-open"></i> Projects
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link <%= title === 'contact' ? 'active' : '' %>" href="/contact">
+                <i class="fa-solid fa-address-book"></i> Contact
+              </a>
+            </li>
+          </ul>  
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
